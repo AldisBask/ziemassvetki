@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Līdz Ziemasvētkiem</title>
+  <title>Document</title>
 </head>
 <html>
 
@@ -15,6 +15,7 @@
       background: url(https://images.pexels.com/photos/1303086/pexels-photo-1303086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
       background-size: cover;
       color: white;
+
     }
 
     #skaititajs {
@@ -35,7 +36,7 @@
       let sekundes = Math.round((ziemassvetki - tagad) / 1000);
       let dienas = Math.floor(sekundes / (60 * 60 * 24));
 
-      $("#skaititajs").html(dienas + " dienām");
+      document.getElementById("skaititajs").innerHTML = dienas + " dienām";
 
     }
     setInterval(cikls, 1000);
@@ -52,6 +53,9 @@
     <h1>Ziemassvētki pēc</h1>
 
     <div id="skaititajs">Aprēķina . . . </div>
+
+
+
 
 </body>
 
